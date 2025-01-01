@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="house.css">
+    <link rel="stylesheet" href="layoutphp/header.css">
+    <link rel="stylesheet" href="panal.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="headerContainer">
+        <div class="headerOverlay"></div>
+        <div class="header">
+            <div class="header1">
+                <img class="headerLogo" src="img/logomsc.png" alt="Logo">
+                <p class="logoo">M.S.C</p>
+            </div>
+            <ul class="headerList">
+                <li><p onclick="location.href='#inicio'">Inicio</p></li>
+                <li><p onclick="location.href='#servicios'">Servicios</p></li>
+                <li><p onclick="location.href='#nosotros'">Nosotros</p></li>
+                <button onclick="location.href='#formulario'" class="headerButton">Contáctanos</button>
+            </ul>
+        </div>
+    </div>
+    <div class="background">
+        <div class="overlay">
+            <div class="zoom-box camara">
+                <img class="overlay-image" src="img/camara.png" alt="camara"></li>
+            </div>
+            <div class="zoom-box acceso">
+                <img class="overlay-image" src="img/acceso.png" alt="accesobiometrico"></li>
+            </div>
+            <div class="zoom-box control">
+                <img class="overlay-image" src="img/control.png" alt="control"></li>
+            </div>
+            <div class="text-box">
+                <p id="dynamic-text">Texto inicial</p>
+            </div>
+        </div>
+    </div>
+    <div class="backgroundPanal">
+        <div class="overlayPanal">
+            <div class="image-section">
+                <div class="image-container" id="servicios">
+                  <div class="image" onclick="showText(0)">
+                    <img class="front" src="img/combustible.png" alt="combustible">
+                    <img class="back" src="img/combustibletexto.png" alt="combustible">
+                  </div>
+                  <div class="image" onclick="showText(1)">
+                    <img class="front" src="img/inteligencia.png" alt="inteligencia">
+                    <img class="back" src="img/inteligenciatexto.png" alt="inteligencia">
+                  </div>
+                  <div class="image" onclick="showText(2)">
+                    <img class="front" src="img/accesorios.png" alt="accesorios">
+                    <img class="back" src="img/accesoriostexto.png" alt="accesorios">
+                  </div>
+                  <div class="image" onclick="showText(3)">
+                    <img class="front" src="img/dotacion.png" alt="dotacion">
+                    <img class="back" src="img/dotaciontexto.png" alt="dotacion">
+                  </div>
+                  <div class="image" onclick="showText(4)">
+                    <img class="front" src="img/instalacion.png" alt="instalacion">
+                    <img class="back" src="img/instalaciontexto.png" alt="instalacion">
+                  </div>
+                  <div class="image" onclick="showText(5)">
+                    <img class="front" src="img/video.png" alt="video">
+                    <img class="back" src="img/videotexto.png" alt="video">
+                  </div>
+                </div>
+                <!-- Recuadro emergente -->
+                <div id="popup" class="popup hidden">
+                    <h2 id="popup-title"></h2>
+                    <p id="popup-text"></p>
+                    <div class="popup-buttons">
+                        <button onclick="prevText()">Anterior</button>
+                        <button onclick="nextText()">Siguiente</button>
+                    </div>
+                    <button onclick="hideText()">Cerrar</button>
+                </div>
+                
+            </div>
+            <div class="overlayfooter" id="nosotros">
+                <div class="footer">
+                    <div class="soldado">
+                        <div class="imagefooter">
+                            <img class="imagefooter" src="img/logofooter.png" alt="">
+                        </div>
+                    </div> 
+                    <div class="imgservicios">
+                        <div class="servicios1">
+                            <div class="servicios3">
+                                <img class="omg" src="img/accesorios.png" alt="">
+                                <img class="omg" src="img/inteligencia.png" alt="">
+                                <img class="omg" src="img/combustible.png" alt="">
+                                <img class="omg" src="img/video.png" alt="">
+                                <img class="omg" src="img/dotacion.png" alt="">
+                                <img class="omg" src="img/instalacion.png" alt="">
+                                <img class="omg" src="img/mision.png" alt="">
+                            </div>
+                        </div>
+                    </div>               
+                </div>            
+            </div>
+            <div class="soldadocontainer">
+                <div class="imgsoldado">
+                    <img src="img/soldadoi.png" alt="">
+                    <div class="contactform">
+                        <img src="img/logocontact.png" alt="">
+                    </div>
+                    <img src="img/soldadod.png" alt="">
+                </div>
+            </div>
+            <div id="formulario" class="glass">
+                <div class="form-wrapper">
+                    <form action="#" method="post" class="simple-form">
+                        <h2>Contactáctanos</h2>
+                        
+                        <label for="campo1"></label>
+                        <input type="text" id="campo1" name="campo1" placeholder="Nombre completo" required>
+            
+                        <label for="campo2"></label>
+                        <input type="text" id="campo2" name="campo2" placeholder="Teléfono" required>
+            
+                        <label for="campo3"></label>
+                        <input type="text" id="campo3" name="campo3" placeholder="E-mail" required>
+            
+                        <label for="mensaje"></label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        
+                        <div class="formbutton">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="house.js"></script>
+<script src="panal.js"></script>
+</html>

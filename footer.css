@@ -1,0 +1,78 @@
+.soldado {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+}
+
+.soldadocontainer {
+    margin-top: 120px;
+}
+
+.contactform {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.contactform img {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgsoldado {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.overlayfooter {
+    margin-top: 445px;
+}
+
+.imagefooter {
+    width: 400px;
+}
+
+/* Asegurándote de que las imágenes se puedan mover de manera independiente */
+.omg {
+    position: absolute; /* Posiciona cada imagen absolutamente dentro de su contenedor */
+    width: 8%; /* Puedes ajustar el tamaño según sea necesario */
+}
+
+/* Ejemplo para mover las imágenes independientemente */
+.omg:nth-child(1) {
+    top: 1380px;
+    left: 600px;
+}
+
+.omg:nth-child(2) {
+    top: 1380px;
+    left: 1130px;
+}
+
+.omg:nth-child(3) {
+    top: 1530px;
+    left: 340px;
+}
+
+.omg:nth-child(4) {
+    top: 1530px;
+    left: 1390px;
+}
+
+.omg:nth-child(5) {
+    top: 1685px;
+    left: 600px;
+}
+
+.omg:nth-child(6) {
+    top: 1685px;
+    left: 1130px;
+}
+
+.omg:nth-child(7) {
+    width: 50%;
+    top: 1880px;
+    left: 465px;
+}

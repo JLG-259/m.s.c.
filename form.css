@@ -1,0 +1,78 @@
+.glass {
+    display: flex;
+    justify-content: center;
+    margin-top: -720px;
+    margin-bottom: 195px;
+}
+
+.form-wrapper {
+    width: 300%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del formulario */
+.simple-form h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    width: 95%;
+    text-decoration: underline #ff914d;
+    text-decoration-thickness: 3px;
+    height: 60px;
+    background-color: #fff;
+    opacity: .66;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.simple-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.simple-form input,
+.simple-form textarea {
+    height: 25px;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    opacity: .76;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 17px;
+}
+
+.simple-form textarea {
+    resize: none;
+}
+
+.formbutton {
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.simple-form button {
+    width: 65%;
+    padding: 15px;
+    background-color: #ff914d;
+    color: #fff;
+    border: none;
+    border-radius: 45px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.simple-form button:hover {
+    background-color: #dd7f44;
+}

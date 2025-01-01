@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    margin-bottom: -300px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Toma el 100% del alto de la pantalla */
+    background-image: url('/img/casa.png'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al contenedor */
+    background-position: center; /* Centra la imagen */
+  }
+
+.background2 {
+  background-attachment: fixed;
+}
+
+  /* Contenedor de imágenes sobrepuestas */
+.overlay {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 1000px;
+}
+
+.camara {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 450px;
+}
+
+.acceso {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 250px;
+}
+
+.text-box {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  opacity: 0; /* Oculto inicialmente */
+  pointer-events: none;
+  width: 300px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .text-box {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+
+.control {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.zoom-box {
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+
+.zoom-box img {
+  display: block;
+}
+
+.overlay-image {
+    width: 30%;
+}
+
+/* Efecto de hover */
+.overlay-image:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+  }
+  
+.camara, .acceso, .control {
+  transition: transform 0.1s ease-in-out; /* Suaviza el zoom */
+}
+  
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .overlay-image {
+      width: 55%; /* Ajusta el tamaño en pantallas más pequeñas */
+    }
+    .text-box {
+      left: 7%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .overlay-image {
+      width: 55%; /* Ocupa todo el ancho en móviles */
+      max-width: none; /* Sin límite máximo */
+    }
+  }
+
+  
