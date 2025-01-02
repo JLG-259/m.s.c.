@@ -56,8 +56,10 @@
 
 .formbutton {
     display: flex;
+    position: relative;
     justify-content: center;
     margin-right: 15px;
+    cursor: pointer;
 }
 
 .simple-form button {
